@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tempa.Server", "Tempa\Server\Tempa.Server.csproj", "{1368B660-B990-4D3B-8F45-190D74308510}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tempa.Server", "Tempa\Server\Tempa.Server.csproj", "{1368B660-B990-4D3B-8F45-190D74308510}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tempa.Client", "Tempa\Client\Tempa.Client.csproj", "{789DF2E9-B724-42A0-9458-71FFA1A72523}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tempa.Client", "Tempa\Client\Tempa.Client.csproj", "{789DF2E9-B724-42A0-9458-71FFA1A72523}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tempa.Shared", "Tempa\Shared\Tempa.Shared.csproj", "{49C836D2-57E9-40AC-8B8F-6638CA62F0EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tempa.Shared", "Tempa\Shared\Tempa.Shared.csproj", "{49C836D2-57E9-40AC-8B8F-6638CA62F0EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

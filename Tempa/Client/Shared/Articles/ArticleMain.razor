@@ -1,0 +1,32 @@
+﻿@using Tempa.Client.Repositories
+@using Tempa.Shared
+@if (articleList != null)
+{
+    <AuthorizeView>
+        <MudGrid>
+            @foreach(var article in articleList)
+            {
+                <MudItem xs="6" sm="3">
+                    <MudPaper Height="400px" Width="100%" Style="@($"color:{Theme.Palette.SuccessLighten}; background:{Theme.Palette.Dark};")">
+                        <MudContainer MaxWidth="MaxWidth.Small" >
+                            @article.Title
+                            @article.Author
+                        </MudContainer>
+                    </MudPaper>
+                </MudItem>
+            }
+        </MudGrid>
+    </AuthorizeView>
+}
+
+
+@code{
+    private MudTheme Theme = new MudTheme();
+    List<ArticleModel> articleList = new();
+    ArticleRepo articleScraper = new();
+
+    protected async override Task OnInitializedAsync()
+    {
+        articleList = await articleScraper.GetArticleList();
+    }
+}
